@@ -6,46 +6,48 @@ import marked from 'marked';
 import {API_URL} from '../config'
 
 const Post =  (props) => (
-    <div id='wrapper'>
-        <Layout>
-            <div id = 'main' className='single'>
-                <article className="post">
-                    <header>
-                        <div className="title">
-                            <h2>{props.post.fields.title}</h2>
-                            <p>{props.post.fields.subtitle}</p>
-                        </div>
-                        <div className="meta">
-                            <time className="published">
-                                <FormattedDate
-                                    value={props.post.sys.updatedAt}
-                                    day='numeric'
-                                    month='long'
-                                    year='numeric'/>
-                            </time>
-                            <div className="author">
-                                <span className="name">{props.author.fields.name}</span>
-                                <img src={props.authorImage.fields.file.url}/>
+    <div className='single'>
+        <div id='wrapper'>
+            <Layout>
+                <div id='main'>
+                    <article className="post">
+                        <header>
+                            <div className="title">
+                                <h2>{props.post.fields.title}</h2>
+                                <p>{props.post.fields.subtitle}</p>
                             </div>
-                        </div>
-                    </header>
-                    <span className="image featured">
-                        <img src={props.featuredImage.fields.file.url}/>
-                    </span>
-                    <div dangerouslySetInnerHTML={props.body} />
-                    <footer>
-                        <ul className="actions">
-                            <li>
-                                <a href='/' className="button big">
-                                    Back
-                                </a>
-                            </li>
-                        </ul>
-                    </footer>
-                </article>
-                <Footer />
-            </div>
-        </Layout>
+                            <div className="meta">
+                                <time className="published">
+                                    <FormattedDate
+                                        value={props.post.sys.updatedAt}
+                                        day='numeric'
+                                        month='long'
+                                        year='numeric'/>
+                                </time>
+                                <div className="author">
+                                    <span className="name">{props.author.fields.name}</span>
+                                    <img src={props.authorImage.fields.file.url}/>
+                                </div>
+                            </div>
+                        </header>
+                        <span className="image featured">
+                            <img src={props.featuredImage.fields.file.url}/>
+                        </span>
+                        <div dangerouslySetInnerHTML={props.body} />
+                        <footer>
+                            <ul className="actions">
+                                <li>
+                                    <a href='/' className="button big">
+                                        Back
+                                    </a>
+                                </li>
+                            </ul>
+                        </footer>
+                    </article>
+                    <Footer />
+                </div>
+            </Layout>
+        </div>
     </div>
 )
 

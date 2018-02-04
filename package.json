@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "node server.js",
     "build": "next build",
-    "start": "next start -p $PORT",
-    "heroku-postbuild": "npm run build"
+    "start": "SET NODE_ENV=production & node server.js"
   },
   "license": "MIT",
   "dependencies": {
