@@ -1,0 +1,1 @@
+export const API_URL = "https://spark-partridge.glitch.me/api";
