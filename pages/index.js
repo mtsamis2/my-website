@@ -1,13 +1,23 @@
 import Layout from '../components/layout'
 import Sidebar from '../components/sidebar'
+import Intro from '../components/intro'
 import Pagination from '../components/pagination'
 import fetch from 'isomorphic-unfetch'
 import { FormattedDate } from  'react-intl';
 import {API_URL} from '../config'
+import _JSXStyle from 'styled-jsx/style'
 
 const Index = (props) => (
   <div id='wrapper'>
     <Layout>
+        <Intro jsxClass='jsx-1'/>
+        <_JSXStyle styleId='1' css={
+            `@media (min-width: 1280px) {
+                section.jsx-1 {
+                    display: none;
+                }
+            }`
+            } />
         <div id = 'main'>
             {props.posts.map((data, key) => (
                 <article className="post" key={key}>

@@ -41,11 +41,11 @@
 					skel.breakpoint('medium').active
 				);
 			});
-
+		/*
 		// IE<=9: Reverse order of main and sidebar.
 			if (skel.vars.IEVersion <= 9)
 				$main.insertAfter($sidebar);
-
+		*/
 		// Menu.
 			$menu
 				.appendTo($body)
@@ -97,7 +97,7 @@
 						$search.removeClass('visible');
 					}, 100);
 				});
-
+		/*
 		// Intro.
 			var $intro = $('#intro');
 
@@ -109,7 +109,7 @@
 					.on('-large', function() {
 						$intro.prependTo($sidebar);
 					});
-
+		*/
 	});
 
 })(jQuery);
