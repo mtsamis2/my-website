@@ -4,12 +4,18 @@ import Intro from '../components/intro'
 import Pagination from '../components/pagination'
 import fetch from 'isomorphic-unfetch'
 import { FormattedDate } from  'react-intl';
-import {API_URL} from '../config'
+import {API_URL, WEBSITE} from '../config'
 import _JSXStyle from 'styled-jsx/style'
 
 const Index = (props) => (
   <div id='wrapper'>
-    <Layout>
+    <Layout 
+        title='Mike Tsamis' 
+        description='IDEATE. CREATE. ITERATE. REPEAT.'
+        image={`${WEBSITE}/static/images/logo.png`}
+        type='website'
+        url={WEBSITE}
+    >
         <Intro jsxClass='jsx-1'/>
         <_JSXStyle styleId='1' css={
             `@media (min-width: 1280px) {

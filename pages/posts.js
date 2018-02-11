@@ -3,12 +3,18 @@ import Footer from '../components/footer'
 import fetch from 'isomorphic-unfetch'
 import { FormattedDate } from  'react-intl';
 import marked from 'marked';
-import {API_URL} from '../config'
+import {API_URL, WEBSITE} from '../config'
 
 const Post =  (props) => (
     <div className='single'>
         <div id='wrapper'>
-            <Layout>
+            <Layout 
+                title={props.post.fields.title + ' - MikeTsamis.com'}
+                description={props.post.fields.subtitle}
+                image={props.featuredImage.fields.file.url}
+                type='article'
+                url={props.currentUrl}
+            >
                 <div id='main'>
                     <article className="post">
                         <header>
@@ -69,7 +75,10 @@ Post.getInitialProps = async function (context) {
   const authorImageRes = await fetch(`${API_URL}/assets/${author.fields.profilePhoto.sys.id }`)
   const authorImage = await authorImageRes.json()
 
+  const currentUrl = WEBSITE + context.asPath;
+
   return { 
+      currentUrl,
       post, 
       author, 
       authorImage, 
