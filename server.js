@@ -9,6 +9,11 @@ app.prepare()
 .then(() => {
   const server = express()
 
+  server.get('/:google305a5d42d8f1ef76', (req, res) => {
+    const actualPage = '/google305a5d42d8f1ef76'
+    app.render(req, res, actualPage)
+  })
+
   server.get('/posts/:id/:slug', (req, res) => {
     const actualPage = '/posts'
     const queryParams = { id: req.params.id }

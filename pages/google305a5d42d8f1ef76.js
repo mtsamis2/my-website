@@ -1,0 +1,1 @@
+export default () => <div>google-site-verification: google305a5d42d8f1ef76.html</div>
