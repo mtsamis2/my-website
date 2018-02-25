@@ -18,6 +18,7 @@ const Layout = (props) => (
             <meta property="og:type" content={props.type} />
             <meta property="og:url" content={props.url} />
             <meta property="twitter:url" content={props.url} />
+            <meta name="google-site-verification" content="9cIjLHNbjwsAGc0xOD498waalz2pWlgk8m5LmLdSLMY" />
             <link rel="canonical" href={props.url} />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <link rel="apple-touch-icon" sizes="180x180" href="/static/images/favicons/apple-touch-icon.png" />
