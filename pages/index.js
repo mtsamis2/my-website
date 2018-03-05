@@ -39,7 +39,7 @@ const Index = (props) => (
                         <div className="meta">
                             <time className="published">
                             <FormattedDate
-                                value={data.sys.createdAt}
+                                value={data.fields.date}
                                 day='numeric'
                                 month='long'
                                 year='numeric'/>
@@ -76,7 +76,7 @@ Index.getInitialProps = async function(context) {
     const page = context.query.page;
     const pageNumber = page ? page * 2 : 0;
 
-    const res = await fetch(`${API_URL}/entries?content_type=2wKn6yEnZewu2SCCkus4as&order=-sys.createdAt&limit=2&skip=${pageNumber}`)
+    const res = await fetch(`${API_URL}/entries?content_type=2wKn6yEnZewu2SCCkus4as&order=-fields.date&limit=2&skip=${pageNumber}`)
     const entries = await res.json()
 
     const total = entries.total;
