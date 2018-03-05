@@ -25,7 +25,7 @@ const Post =  (props) => (
                             <div className="meta">
                                 <time className="published">
                                     <FormattedDate
-                                        value={props.post.sys.updatedAt}
+                                        value={props.post.sys.createdAt}
                                         day='numeric'
                                         month='long'
                                         year='numeric'/>
