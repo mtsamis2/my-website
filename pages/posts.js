@@ -44,7 +44,6 @@ const Post =  (props) => (
                         <div dangerouslySetInnerHTML={props.body} />
                         {props.videoId != null ?
                             <div>
-                                <h1>Video</h1>
                                 <Video videoId={props.videoId} />
                                 <p />
                             </div>
