@@ -3,6 +3,8 @@ import Footer from '../components/footer'
 import fetch from 'isomorphic-unfetch'
 import { FormattedDate } from  'react-intl';
 import marked from 'marked';
+import getYouTubeID from 'get-youtube-id';
+import Video from '../components/video'
 import {API_URL, WEBSITE} from '../config'
 
 const Post =  (props) => (
@@ -40,6 +42,13 @@ const Post =  (props) => (
                             <img src={props.featuredImage.fields.file.url}/>
                         </span>
                         <div dangerouslySetInnerHTML={props.body} />
+                        {props.videoId != null ?
+                            <div>
+                                <h1>Video</h1>
+                                <Video videoId={props.videoId} />
+                                <p />
+                            </div>
+                            : null}
                         <footer>
                             <ul className="actions">
                                 <li>
@@ -77,13 +86,16 @@ Post.getInitialProps = async function (context) {
 
   const currentUrl = WEBSITE + context.asPath;
 
+  const videoId = getYouTubeID(post.fields.body);
+
   return { 
       currentUrl,
       post, 
       author, 
       authorImage, 
       featuredImage, 
-      body 
+      body,
+      videoId
     }
 }
 

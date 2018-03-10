@@ -6,16 +6,19 @@
     "dev": "node server.js",
     "heroku-postbuild": "npm run build",
     "build": "next build",
-    "start": "NODE_ENV=production node server.js"
+    "start": "NODE_ENV=production node server.js",
+    "start-windows": "set NODE_ENV=production && node server.js"
   },
   "license": "MIT",
   "dependencies": {
     "express": "^4.16.2",
+    "get-youtube-id": "^1.0.0",
     "isomorphic-unfetch": "^2.0.0",
     "marked": "^0.3.12",
     "next": "^4.2.3",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-intl": "^2.4.0"
+    "react-intl": "^2.4.0",
+    "react-player": "^1.2.1"
   }
 }
