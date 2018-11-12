@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Layout from '../components/layout'
 import Footer from '../components/footer'
 import fetch from 'isomorphic-unfetch'
@@ -51,9 +52,9 @@ const Post =  (props) => (
                         <footer>
                             <ul className="actions">
                                 <li>
-                                    <a href='/' className="button big">
-                                        Back
-                                    </a>
+                                    <Link href='/'>
+                                        <a className="button big">Back</a>
+                                    </Link>
                                 </li>
                             </ul>
                         </footer>

@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Layout from '../components/layout'
 import Sidebar from '../components/sidebar'
 import Intro from '../components/intro'
@@ -30,9 +31,11 @@ const Index = (props) => (
                     <header>
                         <div className="title">
                             <h2>
-                                <a href={`posts/${data.sys.id}/${data.fields.slug}`}>
-                                    {data.fields.title}
-                                </a>
+                                <Link href={`posts/${data.sys.id}/${data.fields.slug}`}>
+                                    <a>
+                                        {data.fields.title}
+                                    </a>
+                                </Link>
                             </h2>
                             <p>{data.fields.subtitle}</p>
                         </div>
@@ -50,16 +53,18 @@ const Index = (props) => (
                             </div>
                         </div>
                     </header>
-                    <a href={"posts/" + data.sys.id + "/" + data.fields.slug} className="image featured">
-                        <img src={data.featuredImage.fields.file.url}/>
-                    </a>
+                    <Link href={"posts/" + data.sys.id + "/" + data.fields.slug}>
+                        <a className="image featured">
+                            <img src={data.featuredImage.fields.file.url}/>
+                        </a>
+                    </Link>
                     <p>{data.fields.description}</p>							
                     <footer>
                         <ul className="actions">
                             <li>
-                                <a href={`posts/${data.sys.id}/${data.fields.slug}`} className="button big">
-                                    Continue Reading
-                                </a>
+                                <Link href={`posts/${data.sys.id}/${data.fields.slug}`}>
+                                    <a className="button big">Continue Reading</a>
+                                </Link>
                             </li>
                         </ul>
                     </footer>

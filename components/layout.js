@@ -1,6 +1,12 @@
 import Header from './header'
 import { IntlProvider } from 'react-intl';
+import Router from 'next/router'
 import Head from 'next/head';
+
+import * as gtag from '../lib/gtag'
+import { GA_TRACKING_ID } from '../lib/gtag'
+
+Router.events.on('routeChangeComplete', url => gtag.pageview(url))
 
 const Layout = (props) => (
     <IntlProvider locale="en">
@@ -29,6 +35,20 @@ const Layout = (props) => (
             <script src="/static/assets/js/skel.min.js" />
             <script src="/static/assets/js/util.js" />
             <script src="/static/assets/js/main.js" />
+             {/* Global Site Tag (gtag.js) - Google Analytics */}
+            <script
+                async
+                src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+            />
+            <script
+                dangerouslySetInnerHTML={{
+                __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${GA_TRACKING_ID}');
+            `}}
+            />
         </Head>
             <Header />
             {props.children}
