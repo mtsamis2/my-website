@@ -2,10 +2,10 @@ const Pagination = (props) => (
     
     <ul className="actions pagination">
         <li>
-            <a href={"/" + props.pagination.previousPage} className={(props.pagination.previousDisabled ? "disabled " : "") + "button big previous"}>Previous Page</a>
+            <a href={props.pagination.previousDisabled ? "" : "/" + props.pagination.previousPage} className={(props.pagination.previousDisabled ? "disabled " : "") + "button big previous"}>Previous Page</a>
         </li>
         <li>
-            <a href={"/" + props.pagination.nextPage} className={(props.pagination.nextDisabled ? "disabled " : "") + "button big next"}>Next Page</a>
+            <a href={props.pagination.nextDisabled ? "" : "/" + props.pagination.nextPage} className={(props.pagination.nextDisabled ? "disabled " : "") + "button big next"}>Next Page</a>
         </li>
     </ul>
 )
