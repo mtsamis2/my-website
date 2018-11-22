@@ -35,11 +35,19 @@ const Layout = (props) => (
             <script src="/static/assets/js/skel.min.js" />
             <script src="/static/assets/js/util.js" />
             <script src="/static/assets/js/main.js" />
-             {/* Global Site Tag (gtag.js) - Google Analytics */}
+            {/* Google AdSense */}
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
             <script
-                async
-                src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+                dangerouslySetInnerHTML={{
+                __html: `
+                (adsbygoogle = window.adsbygoogle || []).push({
+                    google_ad_client: "ca-pub-5287798851641238",
+                    enable_page_level_ads: true
+                });
+            `}}
             />
+             {/* Global Site Tag (gtag.js) - Google Analytics */}
+            <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}/>
             <script
                 dangerouslySetInnerHTML={{
                 __html: `
