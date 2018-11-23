@@ -79,10 +79,17 @@ const Index = (props) => (
 
 Index.getInitialProps = async function(context) {
     const page = context.query.page;
+
     const pageNumber = page ? page * 2 : 0;
 
     const res = await fetch(`${API_URL}/entries?content_type=2wKn6yEnZewu2SCCkus4as&order=-fields.date&limit=2&skip=${pageNumber}`)
     const entries = await res.json()
+
+    if (entries.sys.type == 'Error' || entries.total == 0) {
+        const err = new Error()
+        err.code = 'ENOENT'
+        throw err
+      }
 
     const total = entries.total;
 

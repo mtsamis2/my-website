@@ -71,6 +71,12 @@ Post.getInitialProps = async function (context) {
   const postRes = await fetch(`${API_URL}/entries/${id}`)
   const post = await postRes.json()
 
+  if (post.sys.type == 'Error') {
+    const err = new Error()
+    err.code = 'ENOENT'
+    throw err
+  }
+
   const body = {
     __html: marked(post.fields.body, {sanitize: true})
   }
