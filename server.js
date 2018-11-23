@@ -20,6 +20,11 @@ app.prepare()
     res.status(200).sendFile('sitemap.xml', options)
   ));
 
+
+  server.get('/robots.txt', (req, res) => (
+    res.status(200).sendFile('robots.txt', options)
+  ));
+
   server.get('/posts/:id/:slug', (req, res) => {
     const actualPage = '/posts'
     const queryParams = { id: req.params.id }

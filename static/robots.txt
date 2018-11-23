@@ -1,0 +1,3 @@
+Sitemap: http://www.miketsamis.com/sitemap.xml
+User-agent:*
+Disallow:
