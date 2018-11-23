@@ -1,5 +1,6 @@
 import Footer from './footer'
 import Intro from './intro'
+import Featured from './featured'
 import _JSXStyle from 'styled-jsx/style'
 
 const Sidebar = () => (
@@ -13,6 +14,7 @@ const Sidebar = () => (
             }`
             } />
         <section id="sidebar">
+            <Featured/>
             <section className="blurb">
                 <h2>About</h2>
                 <p>
