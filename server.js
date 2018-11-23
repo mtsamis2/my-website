@@ -9,6 +9,17 @@ app.prepare()
 .then(() => {
   const server = express()
 
+  const path = require('path');
+  const options = {
+    root: path.join(__dirname, '/static'),
+    headers: {
+      'Content-Type': 'text/plain;charset=UTF-8',
+    }
+  };
+  server.get('/sitemap.xml', (req, res) => (
+    res.status(200).sendFile('sitemap.xml', options)
+  ));
+
   server.get('/posts/:id/:slug', (req, res) => {
     const actualPage = '/posts'
     const queryParams = { id: req.params.id }
