@@ -13,7 +13,7 @@ const Post =  (props) => (
         <div id='wrapper'>
             <Layout 
                 title={props.post.fields.title + ' - MikeTsamis.com'}
-                description={props.post.fields.subtitle}
+                description={props.post.fields.description}
                 image={props.featuredImage.fields.file.url}
                 type='article'
                 url={props.currentUrl}
