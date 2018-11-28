@@ -19,6 +19,7 @@
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-intl": "^2.4.0",
+    "react-mailchimp-subscribe": "^2.0.2",
     "react-player": "^1.2.1"
   }
 }
