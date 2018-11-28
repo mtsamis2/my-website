@@ -7,6 +7,7 @@ import marked from 'marked';
 import getYouTubeID from 'get-youtube-id';
 import Video from '../components/video'
 import {API_URL, WEBSITE} from '../config'
+import { DiscussionEmbed } from 'disqus-react';
 
 const Post =  (props) => (
     <div className='single'>
@@ -49,15 +50,7 @@ const Post =  (props) => (
                                 <p />
                             </div>
                             : null}
-                        <footer>
-                            <ul className="actions">
-                                <li>
-                                    <Link href='/'>
-                                        <a className="button big">Back</a>
-                                    </Link>
-                                </li>
-                            </ul>
-                        </footer>
+                        <DiscussionEmbed shortname={props.disqusShortname} config={props.disqusConfig} />
                     </article>
                     <Footer />
                 </div>
@@ -94,6 +87,13 @@ Post.getInitialProps = async function (context) {
 
   const videoId = getYouTubeID(post.fields.body);
 
+  const disqusShortname = 'MikeTsamis';
+  const disqusConfig = {
+    url: currentUrl,
+    identifier: post.sys.id,
+    title: post.fields.title,
+  };
+
   return { 
       currentUrl,
       post, 
@@ -101,7 +101,9 @@ Post.getInitialProps = async function (context) {
       authorImage, 
       featuredImage, 
       body,
-      videoId
+      videoId,
+      disqusShortname,
+      disqusConfig
     }
 }
 
