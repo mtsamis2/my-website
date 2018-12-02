@@ -19,6 +19,7 @@ const Post =  (props) => (
                 url={props.currentUrl}
             >
                 <div id='main'>
+                    <AdSense.Google client='ca-pub-5287798851641238' slot='9201055683' style={{ display:'block'}} format='auto' responsive='true' />
                     <article className="post">
                         <header>
                             <div className="title">
