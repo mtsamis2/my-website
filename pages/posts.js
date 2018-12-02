@@ -7,6 +7,7 @@ import getYouTubeID from 'get-youtube-id';
 import Video from '../components/video'
 import {API_URL, WEBSITE} from '../config'
 import { DiscussionEmbed } from 'disqus-react';
+import AdSense from 'react-adsense';
 
 const Post =  (props) => (
     <div className='single'>
