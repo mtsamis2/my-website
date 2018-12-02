@@ -27,7 +27,7 @@ const Index = (props) => (
             }`
             } />
         <div id = 'main'>
-            <AdSense.Google client='ca-pub-5287798851641238' slot='8691410483' style={{ display:'inline-block'}} format='auto' responsive='true' />
+            <AdSense.Google client='ca-pub-5287798851641238' slot='8691410483' style={{ display:'block'}} format='auto' responsive='true' />
             {props.posts.map((data, key) => (
                 <article className="post" key={key}>
                     <header>
