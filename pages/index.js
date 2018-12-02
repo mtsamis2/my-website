@@ -7,6 +7,7 @@ import fetch from 'isomorphic-unfetch'
 import { FormattedDate } from  'react-intl';
 import {API_URL, WEBSITE} from '../config'
 import _JSXStyle from 'styled-jsx/style'
+import AdSense from 'react-adsense';
 
 const Index = (props) => (
   <div id='wrapper'>
@@ -26,6 +27,7 @@ const Index = (props) => (
             }`
             } />
         <div id = 'main'>
+            <AdSense.Google client='ca-pub-5287798851641238' slot='9544083889' style={{ display:'inline-block', width:970, height:90 }} />
             {props.posts.map((data, key) => (
                 <article className="post" key={key}>
                     <header>

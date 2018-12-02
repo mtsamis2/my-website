@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import Layout from '../components/layout'
 import Footer from '../components/footer'
 import fetch from 'isomorphic-unfetch'
