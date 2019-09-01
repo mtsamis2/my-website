@@ -25,6 +25,10 @@ app.prepare()
     res.status(200).sendFile('robots.txt', options)
   ));
 
+  server.get('/ads.txt', (req, res) => (
+    res.status(200).sendFile('ads.txt', options)
+  ));
+
   server.get('/posts/:id/:slug', (req, res) => {
     const actualPage = '/posts'
     const queryParams = { id: req.params.id }
