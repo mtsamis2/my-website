@@ -1,18 +1,10 @@
 import Footer from './footer'
 import Intro from './intro'
 import Featured from './featured'
-import _JSXStyle from 'styled-jsx/style'
 
 const Sidebar = () => (
     <div>
-        <Intro jsxClass='jsx-2'/>
-        <_JSXStyle styleId='2' css={
-            `@media (max-width: 1280px) {
-                section.jsx-2 {
-                    display: none;
-                }
-            }`
-            } />
+        <Intro className="introSideBar" />
         <section id="sidebar">
             <Featured/>
             <section className="blurb">

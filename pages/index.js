@@ -6,7 +6,6 @@ import Pagination from '../components/pagination'
 import fetch from 'isomorphic-unfetch'
 import { FormattedDate } from  'react-intl';
 import {API_URL, WEBSITE} from '../config'
-import _JSXStyle from 'styled-jsx/style'
 import AdSense from 'react-adsense';
 
 const Index = (props) => (
@@ -18,14 +17,7 @@ const Index = (props) => (
         type='website'
         url={WEBSITE}
     >
-        <Intro jsxClass='jsx-1'/>
-        <_JSXStyle styleId='1' css={
-            `@media (min-width: 1280px) {
-                section.jsx-1 {
-                    display: none;
-                }
-            }`
-            } />
+        <Intro className="introIndex" />
         <div id = 'main'>
             <AdSense.Google client='ca-pub-5287798851641238' slot='8691410483' style={{ display:'block'}} format='auto' responsive='true' />
             {props.posts.map((data, key) => (

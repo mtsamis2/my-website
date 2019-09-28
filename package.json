@@ -11,15 +11,15 @@
   },
   "license": "MIT",
   "dependencies": {
-    "disqus-react": "^1.0.5",
-    "express": "^4.16.2",
+    "disqus-react": "^1.0.7",
+    "express": "^4.17.1",
     "get-youtube-id": "^1.0.0",
     "isomorphic-unfetch": "^2.0.0",
     "marked": "^0.3.12",
-    "next": "^7.0.2",
-    "react": "^16.2.0",
-    "react-adsense": "^0.0.6",
-    "react-dom": "^16.2.0",
+    "next": "^9.0.7",
+    "react": "^16.10.1",
+    "react-adsense": "^0.1.0",
+    "react-dom": "^16.10.1",
     "react-intl": "^2.4.0",
     "react-player": "^1.2.1"
   }

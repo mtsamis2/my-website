@@ -1,5 +1,5 @@
 const Intro = (props) => (
-    <section id="intro" className={props.jsxClass}>
+    <section id="intro" className={props.className}>
         <div className="logo"><img src="/static/images/logo.png" alt="" /></div>
             <header>
                 <h2>Mike<br/>Tsamis</h2>
