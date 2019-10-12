@@ -60,7 +60,6 @@ const Index = (props) => (
                     </footer>
                 </article>
             ))}
-            <AdSense.Google client='ca-pub-5287798851641238' slot='8232297400' style={{ display:'block'}} format='auto' responsive='true' />
             <Pagination pagination={props.pagination}/>
         </div>
     </Layout>

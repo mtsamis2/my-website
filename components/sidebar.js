@@ -1,12 +1,14 @@
 import Footer from './footer'
 import Intro from './intro'
 import Featured from './featured'
+import AdSense from 'react-adsense';
 
 const Sidebar = () => (
     <div>
         <Intro className="introSideBar" />
         <section id="sidebar">
             <Featured/>
+            <AdSense.Google client='ca-pub-5287798851641238' slot='8232297400' style={{ display:'block'}} format='auto' responsive='true' />
             <section className="blurb">
                 <h2>About</h2>
                 <p>
