@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import Layout from '../components/layout'
 import Sidebar from '../components/sidebar'
 import Intro from '../components/intro'
@@ -25,21 +24,20 @@ const Index = (props) => (
                     <header>
                         <div className="title">
                             <h2>
-                                <Link href={`/posts/${data.sys.id}/${data.fields.slug}`} as={`/posts/${data.sys.id}/${data.fields.slug}`}>
-                                    <a>
-                                        {data.fields.title}
-                                    </a>
-                                </Link>
+                                <a href={`/posts/${data.sys.id}/${data.fields.slug}`} >
+                                    {data.fields.title}
+                                </a>
                             </h2>
                             <p>{data.fields.subtitle}</p>
                         </div>
                         <div className="meta">
                             <time className="published">
-                            <FormattedDate
-                                value={data.fields.date}
-                                day='numeric'
-                                month='long'
-                                year='numeric'/>
+                                <FormattedDate
+                                    value={data.fields.date}
+                                    day='numeric'
+                                    month='long'
+                                    year='numeric'
+                                />
                             </time>
                             <div className="author">
                                 <span className="name">{data.author.fields.name}</span>
@@ -47,18 +45,16 @@ const Index = (props) => (
                             </div>
                         </div>
                     </header>
-                    <Link href={`/posts/${data.sys.id}/${data.fields.slug}`} as={`/posts/${data.sys.id}/${data.fields.slug}`}>
-                        <a className="image featured">
-                            <img src={data.featuredImage.fields.file.url}/>
-                        </a>
-                    </Link>
+                    <a className="image featured" href={`/posts/${data.sys.id}/${data.fields.slug}`}>
+                        <img src={data.featuredImage.fields.file.url}/>
+                    </a>
                     <p>{data.fields.description}</p>							
                     <footer>
                         <ul className="actions">
                             <li>
-                                <Link href={`/posts/${data.sys.id}/${data.fields.slug}`} as={`/posts/${data.sys.id}/${data.fields.slug}`}>
-                                    <a className="button big">Continue Reading</a>
-                                </Link>
+                                <a className="button big" href={`/posts/${data.sys.id}/${data.fields.slug}`}>
+                                    Continue Reading
+                                </a>
                             </li>
                         </ul>
                     </footer>
