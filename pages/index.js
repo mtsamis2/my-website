@@ -47,7 +47,7 @@ const Index = (props) => (
                             </div>
                         </div>
                     </header>
-                    <Link href={"/posts/" + data.sys.id + "/" + data.fields.slug}>
+                    <Link href={`/posts/${data.sys.id}/${data.fields.slug}`}>
                         <a className="image featured">
                             <img src={data.featuredImage.fields.file.url}/>
                         </a>
