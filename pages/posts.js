@@ -51,6 +51,7 @@ const Post =  (props) => (
                                 <p />
                             </div>
                             : null}
+                        <AdSense.Google client='ca-pub-5287798851641238' slot='9388207227' style={{ display:'block'}} format='auto' responsive='true' />
                         <DiscussionEmbed shortname={props.disqusShortname} config={props.disqusConfig} />
                     </article>
                     <Footer />
