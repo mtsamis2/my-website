@@ -25,7 +25,7 @@ const Index = (props) => (
                     <header>
                         <div className="title">
                             <h2>
-                                <Link href={`/posts/${data.sys.id}/${data.fields.slug}`}>
+                                <Link href={`/posts/${data.sys.id}/${data.fields.slug}`} as={`/posts/${data.sys.id}/${data.fields.slug}`}>
                                     <a>
                                         {data.fields.title}
                                     </a>
@@ -47,7 +47,7 @@ const Index = (props) => (
                             </div>
                         </div>
                     </header>
-                    <Link href={`/posts/${data.sys.id}/${data.fields.slug}`}>
+                    <Link href={`/posts/${data.sys.id}/${data.fields.slug}`} as={`/posts/${data.sys.id}/${data.fields.slug}`}>
                         <a className="image featured">
                             <img src={data.featuredImage.fields.file.url}/>
                         </a>
@@ -56,7 +56,7 @@ const Index = (props) => (
                     <footer>
                         <ul className="actions">
                             <li>
-                                <Link href={`/posts/${data.sys.id}/${data.fields.slug}`}>
+                                <Link href={`/posts/${data.sys.id}/${data.fields.slug}`} as={`/posts/${data.sys.id}/${data.fields.slug}`}>
                                     <a className="button big">Continue Reading</a>
                                 </Link>
                             </li>
