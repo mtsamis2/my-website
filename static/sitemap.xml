@@ -9,78 +9,93 @@
 
 <url>
   <loc>https://www.miketsamis.com/</loc>
-  <lastmod>2019-10-14T00:43:17+00:00</lastmod>
+  <lastmod>2019-10-20T21:42:14+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
+  <loc>https://www.miketsamis.com/categories/45JeSWkirCOSOICWmyYw22/raspberry-pi-projects</loc>
+  <lastmod>2019-10-20T21:42:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.miketsamis.com/categories/47qniL6iBOqOUQygWoOIqy/software-development</loc>
+  <lastmod>2019-10-20T21:42:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.miketsamis.com/categories/1zfmxhCUagUKOwMwK6GMwQ/git-faq</loc>
+  <lastmod>2019-10-20T21:42:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://www.miketsamis.com/posts/20ELRMD0PG4GbNGbrSfoAN/git-faq-list-all-branches</loc>
-  <lastmod>2019-10-14T00:43:17+00:00</lastmod>
+  <lastmod>2019-10-20T21:42:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.miketsamis.com/posts/2kYpvemniEuI040usWwAMy/git-faq-how-to-reset-origin-master-to-a-specific-commit</loc>
-  <lastmod>2019-10-14T00:43:17+00:00</lastmod>
+  <lastmod>2019-10-20T21:42:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.miketsamis.com/pages/1</loc>
-  <lastmod>2019-10-14T00:43:17+00:00</lastmod>
+  <lastmod>2019-10-20T21:42:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.miketsamis.com/posts/5yWTTxiWgEAMMGOkoS0WsO/lazy-loading-images-in-react-js</loc>
-  <lastmod>2019-10-14T00:43:17+00:00</lastmod>
+  <lastmod>2019-10-20T21:42:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.miketsamis.com/posts/KrtkQuAMEeyYWwYCMIcoW/cpu-mining-altcoins-on-an-sbc</loc>
-  <lastmod>2019-10-14T00:43:17+00:00</lastmod>
+  <lastmod>2019-10-20T21:42:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.miketsamis.com/posts/A96usFSlY4G0W4kwAqswk/building-a-portable-vpn-router-with-an-ad-blocker</loc>
-  <lastmod>2019-10-14T00:43:17+00:00</lastmod>
+  <lastmod>2019-10-20T21:42:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://www.miketsamis.com/posts/5AJ8tcILpSO6s6oG2Yga2S/automating-personalized-email-alerts</loc>
+  <lastmod>2019-10-20T21:42:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.miketsamis.com/posts/3SSBuzHdvO4ga8gom2yoUw/building-a-retro-gaming-machine-and-home-media-center</loc>
+  <lastmod>2019-10-20T21:42:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
   <loc>https://www.miketsamis.com/posts/Ff7ytYZlxQCs4YciOYAa6/git-faq-how-to-undo-a-commit-to-a-branch</loc>
-  <lastmod>2019-10-14T00:43:17+00:00</lastmod>
+  <lastmod>2019-10-20T21:42:14+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.miketsamis.com/posts/5SBmJezcVGA2W4aCGKI4Uu/git-faq-how-to-delete-a-branch-both-locally-and-remotely</loc>
-  <lastmod>2019-10-14T00:43:17+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.miketsamis.com/pages/2</loc>
-  <lastmod>2019-10-14T00:43:17+00:00</lastmod>
+  <lastmod>2019-10-20T21:42:14+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.miketsamis.com/posts/7MVx3GFuc8M8M0aGCK4Ies/git-faq-how-to-rename-a-local-branch</loc>
-  <lastmod>2019-10-14T00:43:17+00:00</lastmod>
-  <priority>0.51</priority>
+  <lastmod>2019-10-20T21:42:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.miketsamis.com/pages/2</loc>
+  <lastmod>2019-10-20T21:42:14+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.miketsamis.com/pages/3</loc>
-  <lastmod>2019-10-14T00:43:17+00:00</lastmod>
+  <lastmod>2019-10-20T21:42:14+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://www.miketsamis.com/posts/5AJ8tcILpSO6s6oG2Yga2S/automating-personalized-email-alerts</loc>
-  <lastmod>2019-10-14T00:43:17+00:00</lastmod>
-  <priority>0.41</priority>
-</url>
-<url>
   <loc>https://www.miketsamis.com/pages/4</loc>
-  <lastmod>2019-10-14T00:43:17+00:00</lastmod>
+  <lastmod>2019-10-20T21:42:14+00:00</lastmod>
   <priority>0.41</priority>
-</url>
-<url>
-  <loc>https://www.miketsamis.com/posts/3SSBuzHdvO4ga8gom2yoUw/building-a-retro-gaming-machine-and-home-media-center</loc>
-  <lastmod>2019-10-14T00:43:17+00:00</lastmod>
-  <priority>0.33</priority>
 </url>
 
 
