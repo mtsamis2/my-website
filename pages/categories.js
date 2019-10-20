@@ -14,7 +14,9 @@ const Category = (props) => (
                 type='website'
                 url={props.currentUrl}
             >
-                <AdSense.Google client='ca-pub-5287798851641238' slot='7619023422' style={{ display:'block'}} format='auto' responsive='true' />
+                <div className="align-center">
+                    <AdSense.Google client='ca-pub-5287798851641238' slot='7619023422' style={{ display:'block'}} format='auto' responsive='true' />
+                </div>
                 <header>
                     <h3>Posts with the category "{props.category.fields.title}"</h3>
                 </header>
@@ -40,7 +42,9 @@ const Category = (props) => (
                         </article>
                     ))}
                 </div>
-                <AdSense.Google client='ca-pub-5287798851641238' slot='6152036699' style={{ display:'block'}} format='auto' responsive='true' />
+                <div className="align-center">
+                    <AdSense.Google client='ca-pub-5287798851641238' slot='6152036699' style={{ display:'block'}} format='auto' responsive='true' />
+                </div>
             </Layout>
         </div>
         <Footer />
