@@ -51,6 +51,15 @@ const Post =  (props) => (
                                 <p />
                             </div>
                             : null}
+                        <footer>
+                            <ul class="stats">
+                                <li>
+                                    <a href={`/categories/${props.category.sys.id}/${props.category.fields.slug}`}>
+                                        {props.category.fields.title}
+                                    </a>
+                                </li>
+                            </ul>
+                        </footer>
                         <div className="align-center">
                             <AdSense.Google client='ca-pub-5287798851641238' slot='9388207227' style={{ display:'block'}} format='auto' responsive='true' />
                         </div>
@@ -87,6 +96,9 @@ Post.getInitialProps = async function (context) {
   const authorImageRes = await fetch(`${API_URL}/assets/${author.fields.profilePhoto.sys.id }`)
   const authorImage = await authorImageRes.json()
 
+  const categoryRes = await fetch(`${API_URL}/entries/${post.fields.category[0].sys.id}`);
+  const category = await categoryRes.json()
+
   const currentUrl = WEBSITE + context.asPath;
 
   const videoId = getYouTubeID(post.fields.body);
@@ -100,10 +112,11 @@ Post.getInitialProps = async function (context) {
 
   return { 
       currentUrl,
-      post, 
-      author, 
-      authorImage, 
-      featuredImage, 
+      post,
+      author,
+      authorImage,
+      category,
+      featuredImage,
       body,
       videoId,
       disqusShortname,

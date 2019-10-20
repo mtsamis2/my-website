@@ -35,6 +35,12 @@ app.prepare()
     app.render(req, res, actualPage, queryParams)
   })
 
+  server.get('/categories/:id/:slug', (req, res) => {
+    const actualPage = '/categories'
+    const queryParams = { id: req.params.id }
+    app.render(req, res, actualPage, queryParams)
+  })
+
   server.get('/pages/:page', (req, res) => {
     const actualPage = '/'
     const queryParams = { page: req.params.page }

@@ -57,6 +57,13 @@ const Index = (props) => (
                                 </a>
                             </li>
                         </ul>
+                        <ul class="stats">
+                            <li>
+                                <a href={`/categories/${data.category.sys.id}/${data.category.fields.slug}`}>
+                                    {data.category.fields.title}
+                                </a>
+                            </li>
+                        </ul>
                     </footer>
                 </article>
             ))}
@@ -79,7 +86,7 @@ Index.getInitialProps = async function(context) {
         const err = new Error()
         err.code = 'ENOENT'
         throw err
-      }
+    }
 
     const total = entries.total;
 
@@ -94,6 +101,9 @@ Index.getInitialProps = async function(context) {
 
         const authorImageRes = await fetch(`${API_URL}/assets/${post.author.fields.profilePhoto.sys.id }`)
         post["authorImage"] = await authorImageRes.json()
+
+        const categoryRes = await fetch(`${API_URL}/entries/${post.fields.category[0].sys.id}`);
+        post["category"] = await categoryRes.json()
 
         data.push(post);
     };

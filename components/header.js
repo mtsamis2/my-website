@@ -1,7 +1,13 @@
 const Header = () => (
     <header id="header">
         <h1><a href="/">Mike Tsamis</a></h1>
-        <nav className="links"></nav>
+        <nav className="links">
+            <ul>
+                <li><a href="/categories/45JeSWkirCOSOICWmyYw22/raspberry-pi-projects">Raspberry Pi Projects</a></li>
+                <li><a href="/categories/47qniL6iBOqOUQygWoOIqy/software-development">Software Development</a></li>
+                <li><a href="/categories/1zfmxhCUagUKOwMwK6GMwQ/git-faq">Git FAQ</a></li>
+            </ul>
+        </nav>
         <nav className="main">
             <ul>
                 <li className="search">
