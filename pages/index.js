@@ -10,7 +10,7 @@ import AdSense from 'react-adsense';
 const Index = (props) => (
   <div id='wrapper'>
     <Layout 
-        title='Mike Tsamis' 
+        title='Home - MikeTsamis.com' 
         description='IDEATE. CREATE. ITERATE. REPEAT.'
         image={`${WEBSITE}/static/images/logo.png`}
         type='website'
