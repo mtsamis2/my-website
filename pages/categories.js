@@ -7,6 +7,9 @@ import AdSense from 'react-adsense';
 
 const Category = (props) => (
     <div className='single'>
+        <div className="align-center">
+            <AdSense.Google client='ca-pub-5287798851641238' slot='7619023422' style={{ display:'block'}} format='auto' responsive='true' />
+        </div>
         <div id='wrapper'>
             <Layout 
                 title={`${props.category.fields.title} - MikeTsamis.com`}
@@ -14,9 +17,6 @@ const Category = (props) => (
                 type='website'
                 url={props.currentUrl}
             >
-                <div className="align-center">
-                    <AdSense.Google client='ca-pub-5287798851641238' slot='7619023422' style={{ display:'block'}} format='auto' responsive='true' />
-                </div>
                 <header>
                     <h3>Posts with the category "{props.category.fields.title}"</h3>
                 </header>
@@ -42,10 +42,10 @@ const Category = (props) => (
                         </article>
                     ))}
                 </div>
-                <div className="align-center">
-                    <AdSense.Google client='ca-pub-5287798851641238' slot='6152036699' style={{ display:'block'}} format='auto' responsive='true' />
-                </div>
             </Layout>
+        </div>
+        <div className="align-center">
+            <AdSense.Google client='ca-pub-5287798851641238' slot='6152036699' style={{ display:'block'}} format='auto' responsive='true' />
         </div>
         <Footer />
     </div>
