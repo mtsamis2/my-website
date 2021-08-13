@@ -16,7 +16,7 @@
     "get-youtube-id": "^1.0.0",
     "isomorphic-unfetch": "^2.0.0",
     "marked": "^0.3.12",
-    "next": "^9.0.7",
+    "next": "^11.1.0",
     "react": "^16.10.1",
     "react-adsense": "^0.1.0",
     "react-dom": "^16.10.1",
